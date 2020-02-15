@@ -1,0 +1,73 @@
+.\" manpage for wiotest
+.\" Contact bryan.rodish@vertexinc.com to correct errors or typos.
+.TH wiotest 1 "2020-01-31" "9.0.2020" "wiotest application man page"
+.so man1/wiotest
+
+.SH NAME
+wiotest - stand alone test application of the WIO library
+
+.SH SYNOPSIS
+.BI "wiotest [-!] [-u " "user" "] [-p " "password" "]"
+
+.SH DESCRIPTION
+.BR "wiotest " "is a standalone applications to test basic functionality of the WIO library and confirm the wiocfg.xml file is configured to connect to your Vertex Tax Solution."
+
+
+
+.SH EXAMPLES
+.B wiotest
+.RS
+Runs a series of Tax Area ID Lookup tests; a series of Tax Area ID Validation tests; a series of Tax Calculation tests
+.RE
+.PP
+.BR "wiotest " "-?"
+.RS
+Returns wio library build information.  The Build Date reported by the wiotest must match the build date displaed on the Vertex Tax Links for JD Edwards EnterpriseOne Constants form.
+.RE
+
+.SH DEFAULTS
+
+.SH OPTIONS
+
+.B -?
+.RS
+displayes build information
+.RE
+
+.BI -u " username"
+.RS
+specifies the Vertex Tax Solution access user name
+.RE
+
+.BI -p " password"
+.RS
+specifies the Vertex Tax Solution access password
+.RE
+
+
+
+.SH EXIT STATUS
+
+.SH ENVIRONMENT
+
+.SH FILES
+
+.I ./wiocfg.xml
+.R WIO configuration file
+
+
+.SH BUGS
+
+
+.SH AUTHOR
+.BR "Vertex Inc." " 2020 - Originally written by Bryan Rodish (bryan.rodish@vertexinc.com)"
+
+
+.SH SEE ALSO
+." gzip wiotest.1
+." cp wiotest.1.gz /usr/local/share/man/man1
+." mandb
+." makewhatis
+." whatis wiotest
+." man wiotest
+
